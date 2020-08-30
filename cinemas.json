@@ -1,0 +1,247 @@
+{
+    "cinemas": [{
+            "id": 15720,
+            "mark": 0,
+            "url": "https://m.maoyan.com/shows/131",
+            "nm": "新华国际影城（房山店 ",
+            "sellPrice": "13",
+            "addr": "安溪县湖头镇上田村河滨北路2号湖头商业广场新华都超市3楼1室",
+            "distance": "991.4km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "giftTag": "",
+                "hallType": [],
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张最高立减2元",
+                "couponPromotionTag": "",
+                "merchantActivityTag": "",
+                "packShowActivityTag": "",
+                "platformActivityTag": "",
+                "starActivityTag": ""
+            },
+            "showTimes": ""
+        },
+        {
+            "id": 14576,
+            "mark": 0,
+            "url": "https://m.maoyan.com/shows/27343",
+            "nm": "新影联美亚东申影城 ",
+            "sellPrice": "23",
+            "addr": "安溪县永安路777号海峡茗城广场3楼",
+            "distance": "1014km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "giftTag": "",
+                "hallType": [],
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张最高立减2元",
+                "couponPromotionTag": "",
+                "merchantActivityTag": "",
+                "packShowActivityTag": "",
+                "platformActivityTag": "",
+                "starActivityTag": ""
+            },
+            "showTimes": ""
+        },
+        {
+            "id": 28745,
+            "mark": 0,
+            "url": "https://m.maoyan.com/shows/23967",
+            "nm": "泰禾影城（立水桥店）",
+            "sellPrice": "23.8",
+            "addr": "安溪县泉州市官桥镇官桥村利民路3-288号悦城广场三层横店电影城",
+            "distance": "1015.2km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 0,
+                "giftTag": "",
+                "hallType": [],
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "推荐",
+                "couponPromotionTag": "",
+                "merchantActivityTag": "",
+                "packShowActivityTag": "",
+                "platformActivityTag": "",
+                "starActivityTag": ""
+            },
+            "showTimes": ""
+        },
+        {
+            "id": 26226,
+            "mark": 0,
+            "url": "https://m.maoyan.com/shows/10964",
+            "nm": "万达影城（银兴光魔店）",
+            "sellPrice": "25.9",
+            "addr": "安溪县参内乡参内大街万达广场3F-A万达影城",
+            "distance": "1012.4km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "giftTag": "",
+                "hallType": [
+                    "杜比全景声厅",
+                    "4D厅",
+                    "巨幕厅"
+                ],
+                "hallTypeVOList": [{
+                        "name": "杜比全景声厅",
+                        "url": ""
+                    },
+                    {
+                        "name": "4D厅",
+                        "url": ""
+                    },
+                    {
+                        "name": "巨幕厅",
+                        "url": ""
+                    }
+                ],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，29.9元起开卡",
+                "couponPromotionTag": "",
+                "merchantActivityTag": "",
+                "packShowActivityTag": "",
+                "platformActivityTag": "",
+                "starActivityTag": ""
+            },
+            "showTimes": ""
+        },
+        {
+            "id": 2248,
+            "mark": 0,
+            "url": "https://m.maoyan.com/shows/58",
+            "nm": "金逸影城（新都店）",
+            "sellPrice": "38",
+            "addr": "安溪县建安大道宝龙城市广场3楼",
+            "distance": "1014.9km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 0,
+                "giftTag": "",
+                "hallType": [
+                    "IMAX厅",
+                    "60帧厅"
+                ],
+                "hallTypeVOList": [{
+                        "name": "IMAX厅",
+                        "url": ""
+                    },
+                    {
+                        "name": "60帧厅",
+                        "url": ""
+                    }
+                ],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张最高立减4元",
+                "couponPromotionTag": "",
+                "merchantActivityTag": "",
+                "packShowActivityTag": "",
+                "platformActivityTag": "",
+                "starActivityTag": ""
+            },
+            "showTimes": ""
+        },
+        {
+            "id": 27003,
+            "mark": 0,
+            "url": "https://m.maoyan.com/shows/247",
+            "nm": "广安门电影院 ",
+            "sellPrice": "88",
+            "addr": "安溪县官郁村西大路152号润丰商业广场三层",
+            "distance": "1014.4km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 0,
+                "giftTag": "",
+                "hallType": [],
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 0,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠299元起",
+                "couponPromotionTag": "",
+                "merchantActivityTag": "",
+                "packShowActivityTag": "",
+                "platformActivityTag": "",
+                "starActivityTag": ""
+            },
+            "showTimes": ""
+        }
+    ],
+    "ct_pois": [{
+            "ct_poi": "936879945111165696_a15720_c0",
+            "poiid": 99509651
+        },
+        {
+            "ct_poi": "936879945111165696_a14576_c1",
+            "poiid": 89290827
+        },
+        {
+            "ct_poi": "936879945111165696_a28745_c2",
+            "poiid": 892536024
+        },
+        {
+            "ct_poi": "936879945111165696_a26226_c3",
+            "poiid": 189790566
+        },
+        {
+            "ct_poi": "936879945111165696_a2248_c4",
+            "poiid": 1489673
+        },
+        {
+            "ct_poi": "936879945111165696_a27003_c5",
+            "poiid": 192598372
+        }
+    ],
+    "paging": {
+        "hasMore": false,
+        "limit": 10,
+        "offset": 0,
+        "total": 6
+    }
+}

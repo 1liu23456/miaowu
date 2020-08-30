@@ -1,123 +1,45 @@
 <template>
     <div class="movie_body">
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div class="pic_show">
-                    <img src="/images/2.jpg" alt="">
-                </div>
-                <div class="info_list">
-                    <h2>无名之辈</h2>
-                <p>观众评 <span class="grade">9.2</span></p>
-                <p>主演：陈建斌， 任素喜，无误的</p>
-                <p>斤斤计较急急急急急急</p>
-                </div>
-                <div class="btn_mall">
-                    购票
-                </div>
-            </li>
-        </ul>
-    </div>
+    <ul>
+      <li v-for="item in comList" :key="item.id">
+        <div class="pic_show">
+          <a href="https://m.maoyan.com/#movie/.f-hot"><img :src="item.img | setWH('120.180')" alt="" /></a>
+        </div>
+        <div class="info_list">
+          <h2>
+            {{ item.nm }} <img v-if="item.version" src="@/assets/maxs.png" />
+          </h2>
+          <p><span class="person"></span>{{item.wish}} 人想看</p>
+          <p>主演： {{ item.star }}</p>
+          <p>{{item.rt}}上映</p>
+          <!-- <span class="movie_rt">上映时间：{{ item.rt }}</span> -->
+        </div>
+        <div class="btn_mall">
+          预售
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
     export default {
-        name: 'CommingSoon'
+        name: 'CommingSoon',
+        data() {
+            return {
+                comList: []
+            }
+        },
+        mounted() {
+    this.axios.get("/api/coming").then((res) => {
+      // console.log(res);
+      var msg = res;
+      if (res.status === 200) {
+        this.comList = res.data.data;
+        // console.log(this.comList);
+      }
+    });
+  },
     }
 </script>
 
