@@ -9,6 +9,17 @@ app.use('/api', apiRoutes) /* 定义接口在/api目录下，方便管理 */
     /* datura接口 _end */
     /* datura接口 20170302 */
 
+
+var appData = require('./cities.json') /* 引入根目录下goods.json数据文件 */
+var cities = appData.cities /* goods.json文件文件下的.goods数据赋值给变量goods */
+apiRoutes.get('/cities', function(req, res) { /* 定义接口并返回数据 */
+    res.json({
+        data: cities
+    })
+})
+
+
+
 // 正在热映
 var appData = require('./movie.json') /* 引入根目录下goods.json数据文件 */
 var goods = appData.movieList /* goods.json文件文件下的.goods数据赋值给变量goods */
@@ -67,6 +78,12 @@ module.exports = {
                 res.json({
                     code: 200,
                     data: cinemaList
+                })
+            })
+            app.get('/api/cities', (req, res) => {
+                res.json({
+                    code: 200,
+                    data: cities
                 })
             })
         }

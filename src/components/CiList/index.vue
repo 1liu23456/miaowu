@@ -1,5 +1,6 @@
 <template>
   <div class="cinema_body">
+    <Scroller>
     <ul>
       <li  v-for="item in cinList" :key="item.id">
         <a class="a_href" :href="item.url">
@@ -12,15 +13,18 @@
           <span>{{item.distance}}</span>
         </div>
         <div class="card">
-          
-          <div v-for="(num, key) in item.tag" v-if= "num===1" :class="key | classCard" :key="key">
+          <!-- <div v-for="(num, key) in item.tag" v-if= "num===1" :class="key | classCard" :key="key"> -->
+            <template v-for="(num, key) in item.tag" >
+                <div v-if= "num===1" :class="key | classCard" :key="key">
             {{key | formatCard }}
-          </div>
+                </div>
+            </template>
+          <!-- </div> -->
         </div>
         </a>
       </li>
     </ul>
-   
+   </Scroller>
   </div>
 </template>
 
